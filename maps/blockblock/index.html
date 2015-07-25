@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="dmBYDfsKfjlfPvEGhIz88TD+N1RkBzy6tNpEDWpEcyA=" name="csrf-token">
+<meta charset="utf-8">
+<title>
+Overcast Network - Maps
+</title>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-static-top">
+<div class="navbar-inner">
+<div class="container">
+<a class="brand" href="/" style="width: 185px;">
+<img src="https://static.oc.tc/assets/logo-eb8d528ad6768886b6f2faabdeb24d15.png">
+Overcast Network
+</a>
+<div class="nav-collapse">
+<ul class="nav">
+<li>
+<a href="/play">
+<i class="fa fa-play"></i>
+Play
+</a>
+</li>
+<li class="active">
+<a href="/maps">
+<i class="fa fa-cubes"></i>
+Maps
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<i class="fa fa-user"></i>
+Players
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/stats">
+<i class="fa fa-line-chart"></i>
+Stats
+</a>
+</li>
+<li>
+<a href="/channels">
+<i class="fa fa-video-camera"></i>
+Channels
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<i class="fa fa-trophy"></i>
+League
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/teams">
+<i class="fa fa-group"></i>
+Teams
+</a>
+</li>
+<li>
+<a href="/tournaments">
+<i class="fa fa-flag"></i>
+Tournaments
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/forums">
+<i class="fa fa-comments"></i>
+Forum
+</a>
+</li>
+<li>
+<a href="/shop">
+<i class="fa fa-shopping-cart"></i>
+Shop
+</a>
+</li>
+</ul>
+<ul class="nav pull-right">
+<li>
+<a href="/live" style="color: red">
+<i class="fa fa-video-camera"></i>
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="outline: none; ">
+<i class="fa fa-user"></i>
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/login">Login</a>
+</li>
+<li>
+<a href="/register">Register</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="flash" style="margin-top: 20px;">
+</div>
+<section>
+<div class="page-header">
+<h1>
+The Maps
+<small>A large variety of unique maps</small>
+<a class="pull-right" href="/host" rel="tooltip" title="Servers by BeastNode">
+<img src="https://static.oc.tc/assets/host/beastnode2-ed1d1fbb0120e9703340a39de28c3369.png">
+</a>
+</h1>
+</div>
+<div class="row">
+<div class="span12">
+<div class="tabbable tabs-top">
+<ul class="nav nav-tabs map-tabs">
+<li>
+<a href="/maps">Now Playing</a>
+</li>
+<li>
+<a href="/maps/all">All Maps</a>
+</li>
+<li class="active dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+Team Deathmatch
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li class="active">
+<a href="/maps/gamemode/tdm">Team Deathmatch</a>
+</li>
+<li>
+<a href="/maps/gamemode/ctw">Capture the Wool</a>
+</li>
+<li>
+<a href="/maps/gamemode/ctf">Capture the Flag</a>
+</li>
+<li>
+<a href="/maps/gamemode/dtc">Destroy the Core</a>
+</li>
+<li>
+<a href="/maps/gamemode/dtm">Destroy the Monument</a>
+</li>
+<li>
+<a href="/maps/gamemode/koth">King of the Hill</a>
+</li>
+<li>
+<a href="/maps/gamemode/blitz">Blitz</a>
+</li>
+<li>
+<a href="/maps/gamemode/rage">Rage</a>
+</li>
+<li>
+<a href="/maps/gamemode/gs">Ghost Squadron</a>
+</li>
+<li>
+<a href="/maps/gamemode/mixed">Mixed</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+Rotations
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a href="#">US</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/maps/rotation/547ba9c167d522c760000003">CTF</a>
+</li>
+<li>
+<a href="/maps/rotation/4f77c9bfc463750586000001">Alpha</a>
+</li>
+<li>
+<a href="/maps/rotation/50039fa2c46375d944000001">Beta</a>
+</li>
+<li>
+<a href="/maps/rotation/51f1f0fdefad1997001b5e59">Capture1</a>
+</li>
+<li>
+<a href="/maps/rotation/51f1f0feefad1997001b5e5a">Capture2</a>
+</li>
+<li>
+<a href="/maps/rotation/51f1f0feefad1997001b5e5e">Conquer</a>
+</li>
+<li>
+<a href="/maps/rotation/53b8c3de569f63a1b89be0f6">Primed</a>
+</li>
+<li>
+<a href="/maps/rotation/51f1f0feefad1997001b5e60">Mini01</a>
+</li>
+<li>
+<a href="/maps/rotation/51f304f607a6ff70be681133">Mini02</a>
+</li>
+<li>
+<a href="/maps/rotation/51f305c507a6ff70be681134">Mini03</a>
+</li>
+<li>
+<a href="/maps/rotation/51f986bafc008c0b9a37f382">Mini09</a>
+</li>
+<li>
+<a href="/maps/rotation/51f9893afc008c0b9a37f383">Mini05</a>
+</li>
+<li>
+<a href="/maps/rotation/51f9893afc008c0b9a37f384">Mini06</a>
+</li>
+<li>
+<a href="/maps/rotation/51f98c53fc008c0b9a37f385">Mini07</a>
+</li>
+<li>
+<a href="/maps/rotation/51f98c53fc008c0b9a37f386">Mini08</a>
+</li>
+<li>
+<a href="/maps/rotation/51f98c53fc008c0b9a37f387">Mini04</a>
+</li>
+<li>
+<a href="/maps/rotation/51f98c53fc008c0b9a37f388">Mini10</a>
+</li>
+<li>
+<a href="/maps/rotation/52c83a2e6853dd7b46173a6d">Mini11</a>
+</li>
+<li>
+<a href="/maps/rotation/50e37fcd68672bc3b31eb345">Nostalgia</a>
+</li>
+<li>
+<a href="/maps/rotation/519d9a11d78e3d6b0f69d215">Ghost Squadron</a>
+</li>
+<li>
+<a href="/maps/rotation/517c86f293b6df5aab0f2ece">Blitz</a>
+</li>
+<li>
+<a href="/maps/rotation/519d7f0c77b05e9ab6050d21">RAGE</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a href="#">EU</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/maps/rotation/51fec3d8523d7c1b6feae0a9">Alpha</a>
+</li>
+<li>
+<a href="/maps/rotation/51fffd0612eb7b907a7ed978">Capture</a>
+</li>
+<li>
+<a href="/maps/rotation/524cb26fe3e3562d0d9a9d28">Conquer</a>
+</li>
+<li>
+<a href="/maps/rotation/53ffa945c2963540c5000359">Primed</a>
+</li>
+<li>
+<a href="/maps/rotation/51fec57212eb7b907a7ed974">Mini01</a>
+</li>
+<li>
+<a href="/maps/rotation/51fec59d12eb7b907a7ed975">Mini02</a>
+</li>
+<li>
+<a href="/maps/rotation/526404fbe3e3562d0d9a9d29">Mini03</a>
+</li>
+<li>
+<a href="/maps/rotation/526bebedbdba23795ce7b49b">Mini04</a>
+</li>
+<li>
+<a href="/maps/rotation/51fec5fc12eb7b907a7ed976">Nostalgia</a>
+</li>
+<li>
+<a href="/maps/rotation/51fffd8f12eb7b907a7ed979">Ghost Squadron</a>
+</li>
+<li>
+<a href="/maps/rotation/51fffea312eb7b907a7ed97d">Blitz</a>
+</li>
+<li>
+<a href="/maps/rotation/5200061212eb7b907a7ed981">RAGE</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span8">
+<h1>
+BlockBlock
+<small>1.3.10</small>
+</h1>
+<b>by
+<a href="/Lyzak">Lyzak</a>
+</b>
+<dl class="dl-horizontal">
+<dt>TEAMS</dt>
+<dd>
+<strong style="color: #00f">Blue</strong>
+(40 players)
+<br>
+<strong style="color: #800">Red</strong>
+(40 players)
+<br>
+</dd>
+<dt style="margin-top: 16px">OBJECTIVE</dt>
+<dd style="margin-top: 16px">
+<strong>Get the most kills in 15 minutes!</strong>
+</dd>
+</dl>
+</div>
+<div class="span4">
+<img class="thumbnail pull-right" src="https://maps.oc.tc/TDM/Standard/BlockBlock/map.png">
+</div>
+</div>
+<div class="row">
+<div class="span12">
+<br>
+</div>
+</div>
+<div class="row">
+<div class="span12">
+<ul class="nav nav-tabs" id="ratings-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ratings-latest">Latest Version (1.3.10)</a>
+</li>
+<li class="true">
+<a data-toggle="tab" href="#ratings-all">All Versions</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row tab-content">
+<div class="active tab-pane" id="ratings-latest">
+<div class="span4">
+<div class="stars" style="height: 46px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+</div>
+<div class="stars-inner" style="left: 3px; top: 3px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px; width: 2.3007140393238856px"></div>
+</nobr>
+</div>
+</div>
+<h1>
+4.05
+<small>Average Rating</small>
+</h1>
+</div>
+<div class="span8">
+<table class="table table-bordered pull-right" style="width: 600px;">
+<thead>
+<tr>
+<th colspan="2" style="text-align: center;">
+11596
+Votes
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">1</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #e66; height: 20px; width: 17.22809198259789%;">
+1120
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">2</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #f92; height: 20px; width: 8.752486016159105%;">
+569
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">3</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #fd2; height: 20px; width: 20.31991920447483%;">
+1321
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">4</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #ad2; height: 20px; width: 33.071783716594155%;">
+2150
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">5</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #0d2; height: 20px; width: 99.0%;">
+6436
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane true" id="ratings-all">
+<div class="span4">
+<div class="stars" style="height: 46px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 46px; margin: 2px"></div>
+</div>
+<div class="stars-inner" style="left: 3px; top: 3px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 46px; margin: 2px; width: 2.3007140393238856px"></div>
+</nobr>
+</div>
+</div>
+<h1>
+4.05
+<small>Average Rating</small>
+</h1>
+</div>
+<div class="span8">
+<table class="table table-bordered pull-right" style="width: 600px;">
+<thead>
+<tr>
+<th colspan="2" style="text-align: center;">
+11596
+Votes
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">1</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #e66; height: 20px; width: 17.22809198259789%;">
+1120
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">2</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #f92; height: 20px; width: 8.752486016159105%;">
+569
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">3</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #fd2; height: 20px; width: 20.31991920447483%;">
+1321
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">4</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #ad2; height: 20px; width: 33.071783716594155%;">
+2150
+</div>
+</td>
+</tr>
+<tr style="height: 24px;">
+<td>
+<b style="margin: 10px;">5</b>
+</td>
+<td style="width: 100%">
+<div style="text-align: right; padding-right: 6px; background-color: #0d2; height: 20px; width: 99.0%;">
+6436
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<hr>
+<div class="modal hide fade" id="contact">
+<div class="modal-header">
+<button class="close" data-dismiss="modal"></button>
+<h3>
+Contact Overcast Network
+<small class="subject"></small>
+</h3>
+</div>
+<form accept-charset="UTF-8" action="/inquire" class="simple_form new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"><input name="authenticity_token" type="hidden" value="dmBYDfsKfjlfPvEGhIz88TD+N1RkBzy6tNpEDWpEcyA="></div><div class="modal-body">
+<div class="control-group pull-left">
+<label class="string optional control-label" for="inquiry_username">Username</label>
+<div class="controls">
+<input id="inquiry_username" name="inquiry[username]" required="required" size="30" style="width: 250px" type="text">
+</div>
+</div>
+<div class="control-group pull-right">
+<label class="email optional control-label" for="inquiry_email">Email</label>
+<div class="controls">
+<input id="inquiry_email" name="inquiry[email]" required="required" size="30" type="email">
+</div>
+</div>
+<div class="control-group pull-right">
+<label class="string optional control-label" for="inquiry_subject">Subject</label>
+<div class="controls">
+<input id="inquiry_subject" name="inquiry[subject]" required="required" size="30" type="text">
+</div>
+</div>
+<div class="control-group pull-left">
+<label class="string optional control-label" for="inquiry_message">Message</label>
+<div class="controls">
+<textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="10" style="width: 250px">
+</textarea>
+</div>
+</div>
+<input class="subj" name="type" type="hidden" value="">
+<div class="pull-right" style="width: 220px">
+<p>We usually respond within 1-2 days if you provide a valid email</p>
+<p>Please be as clear and concise as possible. It will help us process your inquiry faster.</p>
+</div>
+</div>
+<div class="modal-footer">
+<a class="btn" data-dismiss="modal" href="#">Close</a>
+<input class="btn btn-primary" data-disable-with="Sending..." type="submit" value="Send">
+</div>
+</form>
+</div>
+<footer>
+<ul class="nav nav-pills">
+<li class="pull-left">
+<a>&#xA9; 2015 Overcast Network</a>
+</li>
+<li class="dropup pull-right" style="margin-top: -1px;">
+<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
+Contact
+<i class="fa fa-chevron-up"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-header">How can we help?</li>
+<li class="divider"></li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">General Inquiry</a>
+</li>
+<li>
+<a href="/appeal">Ban Appeal</a>
+</li>
+<li>
+<a href="https://github.com/OvercastNetwork/Issues" target="_blank">Technical Issue</a>
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">Purchase Question</a>
+</li>
+</ul>
+</li>
+<li class="dropup pull-right" style="margin-top: -1px;">
+<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
+Rules
+<i class="fa fa-chevron-up"></i>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/rules">Server Rules</a>
+</li>
+<li>
+<a href="/terms">Terms of Service</a>
+</li>
+</ul>
+</li>
+<li class="pull-right">
+<a href="/punishments">Punishments</a>
+</li>
+<li class="pull-right">
+<a href="/report">Report</a>
+</li>
+<li class="pull-right">
+<a href="/appeal">Appeal</a>
+</li>
+<li class="pull-right">
+<a href="/staff">Staff</a>
+</li>
+<li class="pull-right">
+<a href="/live">Live</a>
+</li>
+<li class="pull-right">
+<a href="/revisions">
+Revisions
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</body>
+</html>
