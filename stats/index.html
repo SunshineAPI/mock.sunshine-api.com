@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="qr4iDrnKsXh22GVZpF3Y0bj77Cv5yrs0EeOQ9lv4s6c=" name="csrf-token">
+<meta charset="utf-8">
+<title>
+Overcast Network - Player Stats
+</title>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-static-top">
+<div class="navbar-inner">
+<div class="container">
+<a class="brand" href="/" style="width: 185px;">
+<img src="https://static.oc.tc/assets/logo-eb8d528ad6768886b6f2faabdeb24d15.png">
+Overcast Network
+</a>
+<div class="nav-collapse">
+<ul class="nav">
+<li>
+<a href="/play">
+<i class="fa fa-play"></i>
+Play
+</a>
+</li>
+<li>
+<a href="/maps">
+<i class="fa fa-cubes"></i>
+Maps
+</a>
+</li>
+<li class="active dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<i class="fa fa-user"></i>
+Players
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/stats">
+<i class="fa fa-line-chart"></i>
+Stats
+</a>
+</li>
+<li>
+<a href="/channels">
+<i class="fa fa-video-camera"></i>
+Channels
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<i class="fa fa-trophy"></i>
+League
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/teams">
+<i class="fa fa-group"></i>
+Teams
+</a>
+</li>
+<li>
+<a href="/tournaments">
+<i class="fa fa-flag"></i>
+Tournaments
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/forums">
+<i class="fa fa-comments"></i>
+Forum
+</a>
+</li>
+<li>
+<a href="/shop">
+<i class="fa fa-shopping-cart"></i>
+Shop
+</a>
+</li>
+</ul>
+<ul class="nav pull-right">
+<li>
+<a href="/live" style="color: red">
+<i class="fa fa-video-camera"></i>
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="outline: none; ">
+<i class="fa fa-user"></i>
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/login">Login</a>
+</li>
+<li>
+<a href="/register">Register</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="flash" style="margin-top: 20px;">
+</div>
+<section>
+<div class="page-header playerstats">
+<h1>
+Stats
+<small>
+Time:
+<select class="input-small playerstats-control" id="playerstats-time">
+<option value="day">24 Hours</option>
+<option value="week">1 week</option>
+<option value="eternity">All Time</option>
+</select>
+Game:
+<select class="input-medium playerstats-control" id="playerstats-game">
+<option value="all">All Gamemodes</option>
+<option value="projectares">Project Ares</option>
+<option value="blitz">Blitz</option>
+<option value="ghostsquadron">Ghost Squadron</option>
+</select>
+</small>
+<small>
+Sort:
+<select class="input-medium playerstats-control" id="playerstats-sort">
+<option value="kills">Kills</option>
+<option value="deaths">Deaths</option>
+<option value="kd">KD Ratio</option>
+<option value="kk">KK Ratio</option>
+<option value="cores_leaked">Cores</option>
+<option value="wool_placed">Wools</option>
+<option value="destroyables_destroyed">Monuments</option>
+<option value="playing_time">Playing Time</option>
+</select>
+</small>
+<div class="controls pull-right">
+<div class="input-prepend">
+<span class="add-on">
+<i class="fa fa-search"></i>
+</span>
+<input class="span2 typeahead" id="stats" name="search" style="margin-top: 0;" type="text">
+</div>
+</div>
+</h1>
+</div>
+<div class="row">
+<div class="span12">
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th width="5%">Place</th>
+<th width="8%">Kills</th>
+<th width="8%">Deaths</th>
+<th width="7%">KD Ratio</th>
+<th width="7%">KK Ratio</th>
+<th width="6%">Wools</th>
+<th width="6%">Cores</th>
+<th width="6%">Monuments</th>
+<th width="18%">Playing Time</th>
+<th width="28%">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+728
+</td>
+<td>
+417
+</td>
+<td>
+1.746
+</td>
+<td>
+1.798
+</td>
+<td>
+2
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+4 hours, 8 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Beastily/16@2x.png" alt="Beastily" title="Beastily" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Beastily" style="color: #08c; ">Beastily</a>
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+695
+</td>
+<td>
+151
+</td>
+<td>
+4.603
+</td>
+<td>
+5.0
+</td>
+<td>
+2
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+7 hours, 7 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/WolsTeXx/16@2x.png" alt="WolsTeXx" title="WolsTeXx" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/WolsTeXx" style="color: #08c; ">WolsTeXx</a>
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+546
+</td>
+<td>
+271
+</td>
+<td>
+2.015
+</td>
+<td>
+2.116
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+5 hours, 17 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Chro_/16@2x.png" alt="Chro_" title="Chro_" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Chro_" style="color: #08c; ">Chro_</a>
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+518
+</td>
+<td>
+272
+</td>
+<td>
+1.904
+</td>
+<td>
+2.0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+2 hours, 48 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/AtlasGames/16@2x.png" alt="AtlasGames" title="AtlasGames" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/AtlasGames" style="color: #08c; ">AtlasGames</a>
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+481
+</td>
+<td>
+137
+</td>
+<td>
+3.511
+</td>
+<td>
+3.943
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+4 hours, 16 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Disciple_/16@2x.png" alt="Disciple_" title="Disciple_" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Disciple_" style="color: #08c; ">Disciple_</a>
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+457
+</td>
+<td>
+265
+</td>
+<td>
+1.725
+</td>
+<td>
+1.764
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+5 hours, 56 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/odisseus/16@2x.png" alt="odisseus" title="odisseus" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/odisseus" style="color: #08c; ">odisseus</a>
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+450
+</td>
+<td>
+295
+</td>
+<td>
+1.525
+</td>
+<td>
+1.596
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+6
+</td>
+<td>
+6 hours, 17 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Terminator55/16@2x.png" alt="Terminator55" title="Terminator55" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Terminator55" style="color: #08c; ">Terminator55</a>
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+423
+</td>
+<td>
+333
+</td>
+<td>
+1.27
+</td>
+<td>
+1.434
+</td>
+<td>
+5
+</td>
+<td>
+1
+</td>
+<td>
+3
+</td>
+<td>
+7 hours, 38 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/PetrovaBite/16@2x.png" alt="PetrovaBite" title="PetrovaBite" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/PetrovaBite" style="color: #08c; ">PetrovaBite</a>
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+414
+</td>
+<td>
+317
+</td>
+<td>
+1.306
+</td>
+<td>
+1.669
+</td>
+<td>
+3
+</td>
+<td>
+0
+</td>
+<td>
+3
+</td>
+<td>
+5 hours, 26 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Dixdixon/16@2x.png" alt="Dixdixon" title="Dixdixon" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Dixdixon" style="color: #08c; ">Dixdixon</a>
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+411
+</td>
+<td>
+254
+</td>
+<td>
+1.618
+</td>
+<td>
+1.835
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+5 hours, 31 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Afrodita/16@2x.png" alt="Afrodita" title="Afrodita" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Afrodita" style="color: #08c; ">Afrodita</a>
+</td>
+</tr>
+<tr>
+<td>
+11
+</td>
+<td>
+402
+</td>
+<td>
+51
+</td>
+<td>
+7.882
+</td>
+<td>
+8.739
+</td>
+<td>
+3
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+4 hours, 19 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Kingie/16@2x.png" alt="Kingie" title="Kingie" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Kingie" style="color: #08c; ">Kingie</a>
+</td>
+</tr>
+<tr>
+<td>
+12
+</td>
+<td>
+402
+</td>
+<td>
+149
+</td>
+<td>
+2.698
+</td>
+<td>
+2.851
+</td>
+<td>
+1
+</td>
+<td>
+2
+</td>
+<td>
+8
+</td>
+<td>
+3 hours, 50 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/NoHackOnlyFerran/16@2x.png" alt="NoHackOnlyFerran" title="NoHackOnlyFerran" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/NoHackOnlyFerran" style="color: #08c; ">NoHackOnlyFerran</a>
+</td>
+</tr>
+<tr>
+<td>
+13
+</td>
+<td>
+396
+</td>
+<td>
+429
+</td>
+<td>
+0.923
+</td>
+<td>
+1.091
+</td>
+<td>
+0
+</td>
+<td>
+2
+</td>
+<td>
+4
+</td>
+<td>
+7 hours, 42 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/StoCazzo/16@2x.png" alt="StoCazzo" title="StoCazzo" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/StoCazzo" style="color: #08c; ">StoCazzo</a>
+</td>
+</tr>
+<tr>
+<td>
+14
+</td>
+<td>
+394
+</td>
+<td>
+265
+</td>
+<td>
+1.487
+</td>
+<td>
+1.655
+</td>
+<td>
+3
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+4 hours, 48 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/_Pinee/16@2x.png" alt="_Pinee" title="_Pinee" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/_Pinee" style="color: #08c; ">_Pinee</a>
+</td>
+</tr>
+<tr>
+<td>
+15
+</td>
+<td>
+392
+</td>
+<td>
+269
+</td>
+<td>
+1.457
+</td>
+<td>
+1.556
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+6 hours, 13 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/candcshow/16@2x.png" alt="candcshow" title="candcshow" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/candcshow" style="color: #08c; ">candcshow</a>
+</td>
+</tr>
+<tr>
+<td>
+16
+</td>
+<td>
+388
+</td>
+<td>
+148
+</td>
+<td>
+2.622
+</td>
+<td>
+2.939
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+3 hours, 27 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/EdwardGrylls/16@2x.png" alt="EdwardGrylls" title="EdwardGrylls" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/EdwardGrylls" style="color: #08c; ">EdwardGrylls</a>
+</td>
+</tr>
+<tr>
+<td>
+17
+</td>
+<td>
+379
+</td>
+<td>
+157
+</td>
+<td>
+2.414
+</td>
+<td>
+2.632
+</td>
+<td>
+11
+</td>
+<td>
+4
+</td>
+<td>
+1
+</td>
+<td>
+3 hours, 55 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Everdeen_/16@2x.png" alt="Everdeen_" title="Everdeen_" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Everdeen_" style="color: #08c; ">Everdeen_</a>
+</td>
+</tr>
+<tr>
+<td>
+18
+</td>
+<td>
+376
+</td>
+<td>
+144
+</td>
+<td>
+2.611
+</td>
+<td>
+2.806
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+5 hours, 51 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Woltreii/16@2x.png" alt="Woltreii" title="Woltreii" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Woltreii" style="color: #08c; ">Woltreii</a>
+</td>
+</tr>
+<tr>
+<td>
+19
+</td>
+<td>
+375
+</td>
+<td>
+201
+</td>
+<td>
+1.866
+</td>
+<td>
+1.933
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1 hour, 0 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Nujax/16@2x.png" alt="Nujax" title="Nujax" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Nujax" style="color: #08c; ">Nujax</a>
+</td>
+</tr>
+<tr>
+<td>
+20
+</td>
+<td>
+370
+</td>
+<td>
+85
+</td>
+<td>
+4.353
+</td>
+<td>
+5.139
+</td>
+<td>
+0
+</td>
+<td>
+0
+</td>
+<td>
+1
+</td>
+<td>
+5 hours, 11 minutes
+</td>
+<td>
+<img class="avatar" src="https://avatar.oc.tc/Statcoman/16@2x.png" alt="Statcoman" title="Statcoman" width="16" height="16" style="width: 16px; height: 16px; ">
+<a href="/Statcoman" style="color: #08c; ">Statcoman</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="btn-group pull-left">
+<a class="btn btn-small disabled">
+1
+</a>
+<a class="btn btn-small" href="/stats?page=2">
+2
+</a>
+<a class="btn btn-small" href="/stats?page=3">
+3
+</a>
+<a class="btn btn-small" href="/stats?page=4">
+4
+</a>
+<a class="btn btn-small" href="/stats?page=5">
+5
+</a>
+<a class="btn btn-small disabled">&#x2026;</a>
+<a class="btn btn-small" href="/stats?page=5778">Last &#xBB;</a>
+</div>
+</div>
+</div>
+</section>
+<hr>
+<div class="modal hide fade" id="contact">
+<div class="modal-header">
+<button class="close" data-dismiss="modal"></button>
+<h3>
+Contact Overcast Network
+<small class="subject"></small>
+</h3>
+</div>
+<form accept-charset="UTF-8" action="/inquire" class="simple_form new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"><input name="authenticity_token" type="hidden" value="qr4iDrnKsXh22GVZpF3Y0bj77Cv5yrs0EeOQ9lv4s6c="></div><div class="modal-body">
+<div class="control-group pull-left">
+<label class="string optional control-label" for="inquiry_username">Username</label>
+<div class="controls">
+<input id="inquiry_username" name="inquiry[username]" required="required" size="30" style="width: 250px" type="text">
+</div>
+</div>
+<div class="control-group pull-right">
+<label class="email optional control-label" for="inquiry_email">Email</label>
+<div class="controls">
+<input id="inquiry_email" name="inquiry[email]" required="required" size="30" type="email">
+</div>
+</div>
+<div class="control-group pull-right">
+<label class="string optional control-label" for="inquiry_subject">Subject</label>
+<div class="controls">
+<input id="inquiry_subject" name="inquiry[subject]" required="required" size="30" type="text">
+</div>
+</div>
+<div class="control-group pull-left">
+<label class="string optional control-label" for="inquiry_message">Message</label>
+<div class="controls">
+<textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="10" style="width: 250px">
+</textarea>
+</div>
+</div>
+<input class="subj" name="type" type="hidden" value="">
+<div class="pull-right" style="width: 220px">
+<p>We usually respond within 1-2 days if you provide a valid email</p>
+<p>Please be as clear and concise as possible. It will help us process your inquiry faster.</p>
+</div>
+</div>
+<div class="modal-footer">
+<a class="btn" data-dismiss="modal" href="#">Close</a>
+<input class="btn btn-primary" data-disable-with="Sending..." type="submit" value="Send">
+</div>
+</form>
+</div>
+<footer>
+<ul class="nav nav-pills">
+<li class="pull-left">
+<a>&#xA9; 2015 Overcast Network</a>
+</li>
+<li class="dropup pull-right" style="margin-top: -1px;">
+<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
+Contact
+<i class="fa fa-chevron-up"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-header">How can we help?</li>
+<li class="divider"></li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">General Inquiry</a>
+</li>
+<li>
+<a href="/appeal">Ban Appeal</a>
+</li>
+<li>
+<a href="https://github.com/OvercastNetwork/Issues" target="_blank">Technical Issue</a>
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">Purchase Question</a>
+</li>
+</ul>
+</li>
+<li class="dropup pull-right" style="margin-top: -1px;">
+<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
+Rules
+<i class="fa fa-chevron-up"></i>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/rules">Server Rules</a>
+</li>
+<li>
+<a href="/terms">Terms of Service</a>
+</li>
+</ul>
+</li>
+<li class="pull-right">
+<a href="/punishments">Punishments</a>
+</li>
+<li class="pull-right">
+<a href="/report">Report</a>
+</li>
+<li class="pull-right">
+<a href="/appeal">Appeal</a>
+</li>
+<li class="pull-right">
+<a href="/staff">Staff</a>
+</li>
+<li class="pull-right">
+<a href="/live">Live</a>
+</li>
+<li class="pull-right">
+<a href="/revisions">
+Revisions
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</body>
+</html>
