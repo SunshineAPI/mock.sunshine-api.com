@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="authenticity_token" name="csrf-param">
-<meta content="hQTLblUEB6nF++hd6OtLjbJmrIg+9cDnxwRqx8Lv0rk=" name="csrf-token">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="RVewuBictNs4XiGF8XUbw9JcHdesO4g5crryDRovF4FZN3foisH4e2YK3frq8jXWIzZ9ooNTcd42hKQD3gSB0g==">
 <meta charset="utf-8">
 <title>
 Overcast Network - Maps
@@ -24,7 +24,7 @@ Overcast Network - Maps
 <div class="navbar-inner">
 <div class="container">
 <a class="brand" href="/" style="width: 185px;">
-<img src="https://static.oc.tc/assets/logo-eb8d528ad6768886b6f2faabdeb24d15.png">
+<img src="https://static.oc.tc/assets/logo-37044de9c6adad7b81043108523146d146d24bb18e4d40b4b5ad9f2fa7727024.png">
 Overcast Network
 </a>
 <div class="nav-collapse">
@@ -104,10 +104,10 @@ Shop
 </a>
 <ul class="dropdown-menu">
 <li>
-<a href="/login">Login</a>
+<a href="/users/sign_in">Login</a>
 </li>
 <li>
-<a href="/register">Register</a>
+<a href="/users/sign_up">Register</a>
 </li>
 </ul>
 </li>
@@ -125,7 +125,7 @@ Shop
 The Maps
 <small>A large variety of unique maps</small>
 <a class="pull-right" href="/host" rel="tooltip" title="Servers by BeastNode">
-<img src="https://static.oc.tc/assets/host/beastnode2-ed1d1fbb0120e9703340a39de28c3369.png">
+<img src="https://static.oc.tc/assets/host/beastnode2-ff395c140276f29cee329726658e40927ff940b0d6c33d368075da823d4470f0.png">
 </a>
 </h1>
 </div>
@@ -161,6 +161,9 @@ Gamemodes
 <a href="/maps/gamemode/dtm">Destroy the Monument</a>
 </li>
 <li>
+<a href="/maps/gamemode/ad">Attack/Defend</a>
+</li>
+<li>
 <a href="/maps/gamemode/koth">King of the Hill</a>
 </li>
 <li>
@@ -170,13 +173,19 @@ Gamemodes
 <a href="/maps/gamemode/rage">Rage</a>
 </li>
 <li>
+<a href="/maps/gamemode/scorebox">Scorebox</a>
+</li>
+<li>
+<a href="/maps/gamemode/arcade">Arcade</a>
+</li>
+<li>
 <a href="/maps/gamemode/gs">Ghost Squadron</a>
 </li>
 <li>
-<a href="/maps/gamemode/mixed">Mixed</a>
+<a href="/maps/gamemode/ffa">Free-for-all</a>
 </li>
 <li>
-<a href="/maps/gamemode/ffa">Free-for-all</a>
+<a href="/maps/gamemode/mixed">Mixed</a>
 </li>
 <li>
 <a href="/maps/gamemode/ranked">Ranked</a>
@@ -327,15 +336,6 @@ Rotations
 </div>
 <div class="row">
 <div class="span12">
-<div class="btn-group pull-left">
-<a class="btn btn-small disabled">
-1
-</a>
-<a class="btn btn-small" href="/maps?page=2">
-2
-</a>
-<a class="btn btn-small" href="/maps?page=2">Last &#xBB;</a>
-</div>
 </div>
 </div>
 <div class="row">
@@ -343,147 +343,16 @@ Rotations
 <ul class="thumbnails" style="margin-top: 16px;">
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="deepwindjungle">
+<div class="map thumbnail" id="pharaoh_s_catacombs">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Ranked1</a>
-<a class="label label-warning" href="/play">Ranked3</a>
-</div>
-</div>
-<a href="/maps/deepwind_jungle">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Deepwind Jungle/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/deepwind_jungle">Deepwind Jungle</a></h1>
-</nobr>
-<small>
-by
-<a href="/Pbat">Pbat</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 4.06">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 0.9071746031745999px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="lostworldctf">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini02</a>
-</div>
-</div>
-<a href="/maps/lost_world_ctf">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/Lost World CTF/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/lost_world_ctf">Lost World: CTF</a></h1>
-</nobr>
-<small>
-by
-<a href="/ElectroidFilms">ElectroidFilms</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.90">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.589605435689592px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="thehill">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Conquer</a>
-</div>
-</div>
-<a href="/maps/the_hill">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/The Hill/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/the_hill">The Hill</a></h1>
-</nobr>
-<small>
-by
-<a href="/Articray">Articray</a>,
-<a href="/Zan">Zan</a>,
-<a href="/Frac">Frac</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.89">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.33347554557575px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row-fluid">
-<div class="span12">
-<div class="map thumbnail" id="pharaohscatacombs">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini08</a>
+<a class="label label-warning" href="/play">Mini06</a>
 </div>
 </div>
 <a href="/maps/pharaoh_s_catacombs">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Pharaoh&apos;s Catacombs/map.png" style="width: 290px; height: 244px;">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Pharaoh&apos;s%20Catacombs/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
@@ -493,47 +362,6 @@ by
 <small>
 by
 <a href="/Reshif">Reshif</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.88">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.246308334387251px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="snowywars">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini01</a>
-</div>
-</div>
-<a href="/maps/snowy_wars">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/Snowy Wars/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/snowy_wars">Snowy Wars</a></h1>
-</nobr>
-<small>
-by
-<a href="/Ro_Gutier">Ro_Gutier</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.87">
 <div class="stars" style="height: 16px;">
@@ -549,34 +377,34 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.027915917150636px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.115255850852837px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="atlantis">
+<div class="map thumbnail" id="cat_s_cradle">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">RAGE</a>
+<a class="label label-warning" href="/play">Conquer</a>
 </div>
 </div>
-<a href="/maps/atlantis">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Rage/Standard/Atlantis/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/cat_s_cradle">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/Cat&apos;s%20Cradle/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/atlantis">Atlantis</a></h1>
+<h1 class="lead"><a href="/maps/cat_s_cradle">Cat&apos;s Cradle</a></h1>
 </nobr>
 <small>
 by
-<a href="/S33K3R">S33K3R</a>
+<a href="/Reshif">Reshif</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.86">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.87">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -590,7 +418,49 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.887460757156045px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 13.11361603700848px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="snowy_wars">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Mini01</a>
+<a class="label label-warning" href="/play">Mini05</a>
+</div>
+</div>
+<a href="/maps/snowy_wars">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/Snowy%20Wars/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/snowy_wars">Snowy Wars</a></h1>
+</nobr>
+<small>
+by
+<a href="/Ro_G">Ro_G</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.85">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.748209483368717px"></div>
 </nobr>
 </div>
 </div>
@@ -601,27 +471,27 @@ by
 </div>
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="costnt">
+<div class="map thumbnail" id="facility">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini06</a>
+<a class="label label-warning" href="/play">Mini01</a>
 </div>
 </div>
-<a href="/maps/cos_tnt_">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/cos(tnt)/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/facility">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Facility/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/cos_tnt_">cos(tnt)</a></h1>
+<h1 class="lead"><a href="/maps/facility">Facility</a></h1>
 </nobr>
 <small>
 by
-<a href="/ElectroidFilms">ElectroidFilms</a>
+<a href="/Mikeg542">Mikeg542</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.81">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.82">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -635,34 +505,35 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.167943106217024px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.271218768711556px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="thefenlandctf">
+<div class="map thumbnail" id="bliss">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Ranked2</a>
+<a class="label label-warning" href="/play">Blitz</a>
 </div>
 </div>
-<a href="/maps/the_fenland_ctf">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/The Fenland CTF/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/bliss">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Classic/Standard/Bliss/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/the_fenland_ctf">The Fenland CTF</a></h1>
+<h1 class="lead"><a href="/maps/bliss">Bliss</a></h1>
 </nobr>
 <small>
 by
-<a href="/McSpider">McSpider</a>
+<a href="/StealthMedia">StealthMedia</a>,
+<a href="/Zelocksurian">Zelocksurian</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.81">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.80">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -676,34 +547,34 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.160577965081274px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 12.064549517760524px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="justice">
+<div class="map thumbnail" id="tf2_badlands_ctf">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">CTF</a>
+<a class="label label-warning" href="/play">Mini02</a>
 </div>
 </div>
-<a href="/maps/justice">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/Justice/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/tf2_badlands_ctf">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/TF2%20Badlands%20CTF/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/justice">Justice</a></h1>
+<h1 class="lead"><a href="/maps/tf2_badlands_ctf">TF2: Badlands CTF</a></h1>
 </nobr>
 <small>
 by
-<a href="/Tywnis">Tywnis</a>
+<a href="/Moo8x8">Moo8x8</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.79">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.80">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -717,7 +588,7 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.903466388744134px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.989100894676234px"></div>
 </nobr>
 </div>
 </div>
@@ -728,7 +599,7 @@ by
 </div>
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="beckam">
+<div class="map thumbnail" id="supercube">
 <div class="img">
 <div class="actions">
 <div class="servers">
@@ -736,17 +607,59 @@ by
 <a class="label label-warning" href="/play">Mini03</a>
 </div>
 </div>
-<a href="/maps/beckam">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Beckam/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/supercube">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/SuperCUBE/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/beckam">Beckam</a></h1>
+<h1 class="lead"><a href="/maps/supercube">SuperCUBE</a></h1>
 </nobr>
 <small>
 by
-<a href="/Avaleer">Avaleer</a>
+<a href="/ollyj">ollyj</a>,
+<a href="/oX_W1LL_G_Xo">oX_W1LL_G_Xo</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.78">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.696399257578882px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="battle_ecliptica_ii">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Mini04</a>
+</div>
+</div>
+<a href="/maps/battle_ecliptica_ii">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Battle%20Ecliptica%20II/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/battle_ecliptica_ii">Battle Ecliptica II</a></h1>
+</nobr>
+<small>
+by
+<a href="/Chicky">Chicky</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.77">
 <div class="stars" style="height: 16px;">
@@ -762,33 +675,32 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.51548734964745px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.620063648496044px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="antiquis">
+<div class="map thumbnail" id="battle_ecliptica_ctf">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini02</a>
-<a class="label label-warning" href="/play">Mini07</a>
+<a class="label label-warning" href="/play">CTF</a>
 </div>
 </div>
-<a href="/maps/antiquis">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/Antiquis/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/battle_ecliptica_ctf">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTF/Standard/Battle%20Ecliptica%20CTF/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/antiquis">Antiquis</a></h1>
+<h1 class="lead"><a href="/maps/battle_ecliptica_ctf">Battle Ecliptica CTF</a></h1>
 </nobr>
 <small>
 by
-<a href="/PepsiDog">PepsiDog</a>
+<a href="/Chicky">Chicky</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.76">
 <div class="stars" style="height: 16px;">
@@ -804,7 +716,93 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.441352405721718px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 11.477928504393821px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="map thumbnail" id="eldritch_ffa">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Ghost Squadron</a>
+</div>
+</div>
+<a href="/maps/eldritch_ffa">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/GS/Standard/Eldritch%20FFA/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/eldritch_ffa">Eldritch: FFA</a></h1>
+</nobr>
+<small>
+by
+<a href="/Vechs1">Vechs1</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.71">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.624275748871565px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="pandemonium">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Alpha</a>
+</div>
+</div>
+<a href="/maps/pandemonium">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Pandemonium/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/pandemonium">Pandemonium</a></h1>
+</nobr>
+<small>
+by
+<a href="/Tywnis">Tywnis</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.71">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.61574616171955px"></div>
 </nobr>
 </div>
 </div>
@@ -831,52 +829,6 @@ by
 by
 <a href="/Vechs1">Vechs1</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.71">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.654331210191081px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row-fluid">
-<div class="span12">
-<div class="map thumbnail" id="drywound">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">RAGE</a>
-</div>
-</div>
-<a href="/maps/dry_wound">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Rage/Standard/Dry Wound/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/dry_wound">Dry Wound</a></h1>
-</nobr>
-<small>
-by
-<a href="/Plastix">Plastix</a>,
-<a href="/Tywnis">Tywnis</a>
-</small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.70">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
@@ -891,90 +843,7 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.542861660079048px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="horizondtm">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini05</a>
-</div>
-</div>
-<a href="/maps/horizondtm">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/HorizonDTM/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/horizondtm">HorizonDTM</a></h1>
-</nobr>
-<small>
-by
-<a href="/Tywnis">Tywnis</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.69">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.335033962264147px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="thecomplex">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Blitz</a>
-</div>
-</div>
-<a href="/maps/the_complex">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Classic/Standard/The Complex/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/the_complex">The Complex</a></h1>
-</nobr>
-<small>
-by
-<a href="/Plastix">Plastix</a>,
-<a href="/SH4D0W_HAWK">SH4D0W_HAWK</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.69">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.30654976792161px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.5194999143689px"></div>
 </nobr>
 </div>
 </div>
@@ -985,27 +854,25 @@ by
 </div>
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="storm">
+<div class="map thumbnail" id="forsaken_fort">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Alpha</a>
+<a class="label label-warning" href="/play">Blitz</a>
 </div>
 </div>
-<a href="/maps/storm">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/Storm/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/forsaken_fort">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Classic/Standard/Forsaken-Fort/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/storm">Storm</a></h1>
+<h1 class="lead"><a href="/maps/forsaken_fort">Forsaken Fort</a></h1>
 </nobr>
 <small>
 by
-<a href="/Plastix">Plastix</a>,
-<a href="/Lyzak">Lyzak</a>,
-<a href="/SajinZero">SajinZero</a>
+<a href="/mitchiii_">mitchiii_</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.68">
 <div class="stars" style="height: 16px;">
@@ -1021,32 +888,33 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.29970995810506px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.288902564102562px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="outback">
+<div class="map thumbnail" id="deepwind_jungle">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Capture</a>
+<a class="label label-warning" href="/play">Ranked2</a>
+<a class="label label-warning" href="/play">Ranked2</a>
 </div>
 </div>
-<a href="/maps/outback">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Outback/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/deepwind_jungle">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Deepwind%20Jungle/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/outback">Outback</a></h1>
+<h1 class="lead"><a href="/maps/deepwind_jungle">Deepwind Jungle</a></h1>
 </nobr>
 <small>
 by
-<a href="/rockymine">rockymine</a>
+<a href="/Pbat">Pbat</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.68">
 <div class="stars" style="height: 16px;">
@@ -1062,14 +930,14 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.295264890751268px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.24316089406699px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="royalgardendtc">
+<div class="map thumbnail" id="ion">
 <div class="img">
 <div class="actions">
 <div class="servers">
@@ -1077,17 +945,62 @@ by
 <a class="label label-warning" href="/play">Destroy</a>
 </div>
 </div>
-<a href="/maps/royal_garden_dtc">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTC/Standard/Royal Garden DTC/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/ion">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/DTC/Standard/Ion/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/royal_garden_dtc">Royal Garden DTC</a></h1>
+<h1 class="lead"><a href="/maps/ion">Ion</a></h1>
 </nobr>
 <small>
 by
-<a href="/Strangey">Strangey</a>
+<a href="/lonelyhornet">lonelyhornet</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.67">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 10.128338249754176px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="map thumbnail" id="warlock">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Mini02</a>
+</div>
+</div>
+<a href="/maps/warlock">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/Warlock/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/warlock">Warlock</a></h1>
+</nobr>
+<small>
+by
+<a href="/McSpider">McSpider</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.66">
 <div class="stars" style="height: 16px;">
@@ -1103,7 +1016,91 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.948722020068363px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.95806383069143px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="two_tier">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Capture</a>
+</div>
+</div>
+<a href="/maps/two_tier">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Two%20Tier/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/two_tier">Two Tier</a></h1>
+</nobr>
+<small>
+by
+<a href="/nixter1029">nixter1029</a>,
+<a href="/Tywnis">Tywnis</a>,
+<a href="/Brumlington">Brumlington</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.66">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.872991249005567px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="afflicted">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">Conquer</a>
+</div>
+</div>
+<a href="/maps/afflicted">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/Afflicted/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/afflicted">Afflicted</a></h1>
+</nobr>
+<small>
+by
+<a href="/Draco_Rogue">Draco_Rogue</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.66">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.852100108813927px"></div>
 </nobr>
 </div>
 </div>
@@ -1114,25 +1111,25 @@ by
 </div>
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="goldendroughtiii">
+<div class="map thumbnail" id="the_nile">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini04</a>
+<a class="label label-warning" href="/play">Alpha</a>
 </div>
 </div>
-<a href="/maps/golden_drought_iii">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Golden Drought III/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/the_nile">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/DTM/Standard/The%20Nile/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/golden_drought_iii">Golden Drought III</a></h1>
+<h1 class="lead"><a href="/maps/the_nile">The Nile</a></h1>
 </nobr>
 <small>
 by
-<a href="/Reshif">Reshif</a>
+<a href="/Eclipsen">Eclipsen</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.65">
 <div class="stars" style="height: 16px;">
@@ -1148,34 +1145,35 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.725824294501574px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.843721813965182px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="tetrad">
+<div class="map thumbnail" id="golden_drought_iii">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Capture2</a>
+<a class="label label-warning" href="/play">Ranked1</a>
+<a class="label label-warning" href="/play">Ranked3</a>
 </div>
 </div>
-<a href="/maps/tetrad">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Tetrad/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/golden_drought_iii">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Golden%20Drought%20III/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/tetrad">Tetrad</a></h1>
+<h1 class="lead"><a href="/maps/golden_drought_iii">Golden Drought III</a></h1>
 </nobr>
 <small>
 by
-<a href="/Chicky">Chicky</a>
+<a href="/Reshif">Reshif</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.63">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.64">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -1189,60 +1187,14 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.546094069529653px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.6232899324712px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="circustdm">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Conquer</a>
-</div>
-</div>
-<a href="/maps/circus_tdm">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/TDM/Standard/Circus TDM/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/circus_tdm">Circus TDM</a></h1>
-</nobr>
-<small>
-by
-<a href="/Strangey">Strangey</a>,
-<a href="/Neet0">Neet0</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.61">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.237427937915744px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row-fluid">
-<div class="span12">
-<div class="map thumbnail" id="royalgardenctw">
+<div class="map thumbnail" id="circus_ctw">
 <div class="img">
 <div class="actions">
 <div class="servers">
@@ -1250,19 +1202,19 @@ by
 <a class="label label-warning" href="/play">Capture1</a>
 </div>
 </div>
-<a href="/maps/royal_garden_ctw">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Royal Garden CTW/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/circus_ctw">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Circus%20CTW/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/royal_garden_ctw">Royal Garden CTW</a></h1>
+<h1 class="lead"><a href="/maps/circus_ctw">Circus CTW</a></h1>
 </nobr>
 <small>
 by
 <a href="/Strangey">Strangey</a>,
-<a href="/Vetches">Vetches</a>,
-<a href="/Neet0">Neet0</a>
+<a href="/Clafferizor">Clafferizor</a>,
+<a href="/neet0">neet0</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.60">
 <div class="stars" style="height: 16px;">
@@ -1278,33 +1230,37 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.029238369406828px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 9.04204185809086px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="harbblitz">
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="map thumbnail" id="fractal_descent">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Blitz</a>
+<a class="label label-warning" href="/play">Ranked1</a>
 </div>
 </div>
-<a href="/maps/harb_blitz">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Classic/Standard/Harb Blitz/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/fractal_descent">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Mixed/Standard/Fractal%20Descent/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/harb_blitz">Harb Blitz</a></h1>
+<h1 class="lead"><a href="/maps/fractal_descent">Fractal Descent</a></h1>
 </nobr>
 <small>
 by
-<a href="/SH4D0W_HAWK">SH4D0W_HAWK</a>,
-<a href="/Plastix">Plastix</a>
+<a href="/Reshif">Reshif</a>,
+<a href="/teheggy">teheggy</a>
 </small>
 <div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.56">
 <div class="stars" style="height: 16px;">
@@ -1320,28 +1276,28 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 8.475729497994745px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 8.445880993645291px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="tankertnt">
+<div class="map thumbnail" id="inheritance">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Mini01</a>
+<a class="label label-warning" href="/play">Destroy</a>
 </div>
 </div>
-<a href="/maps/tanker_tnt">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTC/Standard/Tanker TNT/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/inheritance">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/DTC/Standard/Inheritance/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/tanker_tnt">Tanker TNT</a></h1>
+<h1 class="lead"><a href="/maps/inheritance">Inheritance</a></h1>
 </nobr>
 <small>
 by
@@ -1361,7 +1317,50 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 7.702467733608675px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 7.631812071423722px"></div>
+</nobr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="map thumbnail" id="zen">
+<div class="img">
+<div class="actions">
+<div class="servers">
+<span class="label label-info">Now playing on:</span>
+<a class="label label-warning" href="/play">RAGE</a>
+</div>
+</div>
+<a href="/maps/zen">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Rage/Standard/Zen/map.png" style="width: 290px; height: 244px;">
+</a>
+</div>
+<div class="caption" style="text-align: center;">
+<nobr>
+<h1 class="lead"><a href="/maps/zen">Zen</a></h1>
+</nobr>
+<small>
+by
+<a href="/H0bie">H0bie</a>,
+<a href="/StealthMedia">StealthMedia</a>,
+<a href="/Tywnis">Tywnis</a>
+</small>
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.47">
+<div class="stars" style="height: 16px;">
+<div class="stars-inner">
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
+</div>
+<div class="stars-inner" style="left: 1px; top: 1px;">
+<nobr>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 7.114066954989591px"></div>
 </nobr>
 </div>
 </div>
@@ -1372,27 +1371,27 @@ by
 </div>
 <div class="row-fluid">
 <div class="span12">
-<div class="map thumbnail" id="beacher">
+<div class="map thumbnail" id="pride">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Ghost Squadron</a>
+<a class="label label-warning" href="/play">RAGE</a>
 </div>
 </div>
-<a href="/maps/beacher">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/GS/Standard/Beacher/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/pride">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/Blitz/Rage/Standard/Pride/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/beacher">Beacher</a></h1>
+<h1 class="lead"><a href="/maps/pride">Pride</a></h1>
 </nobr>
 <small>
 by
-<a href="/SrChains">SrChains</a>
+<a href="/AtlasGames">AtlasGames</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.48">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.41">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -1406,34 +1405,34 @@ by
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
 <div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 7.2009696969696995px"></div>
+<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 6.141560798548091px"></div>
 </nobr>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="map thumbnail" id="urbanjungle">
+<div class="map thumbnail" id="wit_s_end">
 <div class="img">
 <div class="actions">
 <div class="servers">
 <span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Nostalgia</a>
+<a class="label label-warning" href="/play">Ranked4</a>
 </div>
 </div>
-<a href="/maps/urban_jungle">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/KOTH/Standard/Urban Jungle/map.png" style="width: 290px; height: 244px;">
+<a href="/maps/wit_s_end">
+<img alt="" class="map-thumb" src="https://maps.oc.tc/CTW/Standard/Wits%20End/map.png" style="width: 290px; height: 244px;">
 </a>
 </div>
 <div class="caption" style="text-align: center;">
 <nobr>
-<h1 class="lead"><a href="/maps/urban_jungle">Urban Jungle</a></h1>
+<h1 class="lead"><a href="/maps/wit_s_end">Wit&apos;s End</a></h1>
 </nobr>
 <small>
 by
-<a href="/Plastix">Plastix</a>
+<a href="/Reshif">Reshif</a>
 </small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.48">
+<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 0.00">
 <div class="stars" style="height: 16px;">
 <div class="stars-inner">
 <div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
@@ -1444,52 +1443,6 @@ by
 </div>
 <div class="stars-inner" style="left: 1px; top: 1px;">
 <nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 7.177872480460715px"></div>
-</nobr>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="map thumbnail" id="retaliation">
-<div class="img">
-<div class="actions">
-<div class="servers">
-<span class="label label-info">Now playing on:</span>
-<a class="label label-warning" href="/play">Ranked1</a>
-<a class="label label-warning" href="/play">Ranked2</a>
-</div>
-</div>
-<a href="/maps/retaliation">
-<img alt="" class="map-thumb" src="https://maps.oc.tc/DTC/Standard/Retaliation/map.png" style="width: 290px; height: 244px;">
-</a>
-</div>
-<div class="caption" style="text-align: center;">
-<nobr>
-<h1 class="lead"><a href="/maps/retaliation">Retaliation</a></h1>
-</nobr>
-<small>
-by
-<a href="/Draco_Rogue">Draco_Rogue</a>
-</small>
-<div data-container="body" data-placement="bottom" rel="tooltip" style="margin-left: 96px; margin-top: 5px;" title="Player Rating: 3.46">
-<div class="stars" style="height: 16px;">
-<div class="stars-inner">
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-<div class="stars-bg fa fa-star" style="font-size: 16px; margin: 0px"></div>
-</div>
-<div class="stars-inner" style="left: 1px; top: 1px;">
-<nobr>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px;"></div>
-<div class="stars-fg fa fa-star" style="font-size: 16px; margin: 0px; width: 6.8706149265018635px"></div>
 </nobr>
 </div>
 </div>
@@ -1503,15 +1456,6 @@ by
 </div>
 <div class="row">
 <div class="span12">
-<div class="btn-group pull-left">
-<a class="btn btn-small disabled">
-1
-</a>
-<a class="btn btn-small" href="/maps?page=2">
-2
-</a>
-<a class="btn btn-small" href="/maps?page=2">Last &#xBB;</a>
-</div>
 </div>
 </div>
 </section>
@@ -1524,29 +1468,29 @@ Contact Overcast Network
 <small class="subject"></small>
 </h3>
 </div>
-<form accept-charset="UTF-8" action="/inquire" class="simple_form new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"><input name="authenticity_token" type="hidden" value="hQTLblUEB6nF++hd6OtLjbJmrIg+9cDnxwRqx8Lv0rk="></div><div class="modal-body">
+<form novalidate="novalidate" class="simple_form new_inquiry" id="new_inquiry" action="/inquire" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;"><input type="hidden" name="authenticity_token" value="U6CvOAJinpVkNbaHuoaKqHxlCKKY02TghbvbnGPtsHBPwGhokD/SNTphSvihAaS9jQ9o17e7nQfBhY2Sp8YmIw=="><div class="modal-body">
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_username">Username</label>
 <div class="controls">
-<input id="inquiry_username" name="inquiry[username]" required="required" size="30" style="width: 250px" type="text">
+<input required="required" style="width: 250px" type="text" name="inquiry[username]" id="inquiry_username">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="email optional control-label" for="inquiry_email">Email</label>
 <div class="controls">
-<input id="inquiry_email" name="inquiry[email]" required="required" size="30" type="email">
+<input required="required" type="email" name="inquiry[email]" id="inquiry_email">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="string optional control-label" for="inquiry_subject">Subject</label>
 <div class="controls">
-<input id="inquiry_subject" name="inquiry[subject]" required="required" size="30" type="text">
+<input required="required" type="text" name="inquiry[subject]" id="inquiry_subject">
 </div>
 </div>
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_message">Message</label>
 <div class="controls">
-<textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="10" style="width: 250px">
+<textarea rows="10" style="width: 250px" name="inquiry[message]" id="inquiry_message">
 </textarea>
 </div>
 </div>
@@ -1563,64 +1507,109 @@ Contact Overcast Network
 </form>
 </div>
 <footer>
-<ul class="nav nav-pills">
-<li class="pull-left">
-<a>&#xA9; 2015 Overcast Network</a>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Contact
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li class="nav-header">How can we help?</li>
-<li class="divider"></li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">General Inquiry</a>
+<div class="row">
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Policies
 </li>
 <li>
-<a href="/appeal">Ban Appeal</a>
-</li>
-<li>
-<a href="https://github.com/OvercastNetwork/Issues" target="_blank">Technical Issue</a>
-</li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">Purchase Question</a>
-</li>
-</ul>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Rules
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li>
-<a href="/rules">Server Rules</a>
+<a href="/rules">Player Rules</a>
 </li>
 <li>
 <a href="/terms">Terms of Service</a>
 </li>
+<li>
+<a href="/privacy">Privacy Policy</a>
+</li>
+<li>
+<a href="/refund">Refund Policy</a>
+</li>
 </ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Moderation
 </li>
-<li class="pull-right">
-<a href="/punishments">Punishments</a>
+<li>
+<a href="/report">Report a Player</a>
 </li>
-<li class="pull-right">
-<a href="/report">Report</a>
+<li>
+<a href="/appeal">Appeal a Punishment</a>
 </li>
-<li class="pull-right">
-<a href="/appeal">Appeal</a>
+<li>
+<a href="/punishments">Recent Punishments</a>
 </li>
-<li class="pull-right">
-<a href="/staff">Staff</a>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Organization
 </li>
-<li class="pull-right">
-<a href="/revisions">
-Revisions
+<li>
+<a href="/staff">Staff Listing</a>
+</li>
+<li>
+<a href="/revisions">Development Logs</a>
+</li>
+<li>
+<a href="https://github.com/OvercastNetwork/Issues">Report a Bug</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Contact Us
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">General Inquiries</a>
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">Shop Purchases</a>
+</li>
+<li>
+<a href="/appeal">Ban Appeals</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked follow-us">
+<li class="heading">
+Follow Us
+</li>
+<li>
+<a href="https://twitter.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/twitter_icon-ce65c4f4c6d6212c05301d0f3c1a38e8a0b6b0baa8c98853b0ddc310372b6e58.png">
+Twitter
+</a>
+<a href="https://www.facebook.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/facebook_icon-34f4e0ba3a52886710c0360d3f8f35352b6c0a73c7181f690c135b1d24eaa8f0.png">
+Facebook
+</a>
+<a href="https://www.youtube.com/c/OvercastNetwork">
+<img src="https://static.oc.tc/assets/youtube_icon-a724516a1d426e48bae525ea6e04abc3e1cf8234989b3f300ed294a61a6c893d.png">
+YouTube
+</a>
+<a href="http://www.twitch.tv/ocnlive">
+<img src="https://static.oc.tc/assets/twitch_icon-6604f0ced4759bd1c8bb6a01de875a66024f422c14789a752024980d57ba7398.png">
+Twitch
 </a>
 </li>
 </ul>
+</div>
+<div class="span2" style="text-align: center;">
+Servers provided by
+<a href="/host">
+<img class="pull-right" src="https://static.oc.tc/assets/beastnode-844f199a7f8d0aa2903d26a73ce554bbea1d6030baf3f28bface484c944b5d50.png">
+</a>
+<div class="copyright pull-right">
+&#xA9; 2015 Overcast Network
+</div>
+</div>
+</div>
 </footer>
 </div>
 </body>

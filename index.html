@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="authenticity_token" name="csrf-param">
-<meta content="rl97+bJJa6mqgGpikpScBAVa6sUSye6S7qfMpssn/Cw=" name="csrf-token">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="pvvFAvmcxW4H659y67L2gXn3mWNwFKzxp7T2olveIxySg3aJVb1fBt/h7BkhoPTOGYe1usPy4X3Q9lz/sbhptA==">
 <meta charset="utf-8">
 <title>
 Overcast Network - Minecraft PvP
@@ -24,7 +24,7 @@ Overcast Network - Minecraft PvP
 <div class="navbar-inner">
 <div class="container">
 <a class="brand" href="/" style="width: 185px;">
-<img src="https://static.oc.tc/assets/logo-eb8d528ad6768886b6f2faabdeb24d15.png">
+<img src="https://static.oc.tc/assets/logo-37044de9c6adad7b81043108523146d146d24bb18e4d40b4b5ad9f2fa7727024.png">
 Overcast Network
 </a>
 <div class="nav-collapse">
@@ -104,10 +104,10 @@ Shop
 </a>
 <ul class="dropdown-menu">
 <li>
-<a href="/login">Login</a>
+<a href="/users/sign_in">Login</a>
 </li>
 <li>
-<a href="/register">Register</a>
+<a href="/users/sign_up">Register</a>
 </li>
 </ul>
 </li>
@@ -119,7 +119,7 @@ Shop
 <div class="carousel slide" id="hero" style="position: absolute;">
 <div class="carousel-inner" style="z-index: -1">
 <div class="active item">
-<img src="https://static.oc.tc/assets/index/marketing/4-666ce3abf0ef739ebf80be86146802e0.png">
+<img src="https://static.oc.tc/assets/index/marketing/3-043a7e564c5424ca6b3da49d46ef9c868dd1e15f5307d2422d46d6f57a572965.png">
 </div>
 </div>
 </div>
@@ -135,16 +135,16 @@ Shop
 <ul class="bs-docs-social-buttons">
 <li>Latest Announcements:</li>
 <li>
-<a data-placement="bottom" href="/forums/topics/55d2da0dc296351ecb000409" rel="tooltip" title="Updated 8 hours ago">Spawn-camping is no longer punishable</a>
+<a data-placement="bottom" href="/forums/topics/563fcc315f35b99c4b000055" rel="tooltip" title="Updated 2 days ago">Match mutations</a>
 </li>
 <li>
-<a data-placement="bottom" href="/forums/topics/55d24ae55f35b9cba3000003" rel="tooltip" title="Updated 9 hours ago">Ranked Servers</a>
+<a data-placement="bottom" href="/forums/topics/562829df67d522f39c0001d7" rel="tooltip" title="Updated 29 days ago">Introducing Back to The Conquest 2!</a>
 </li>
 <li>
-<a data-placement="bottom" href="/forums/topics/55c567e767d5224bb8001a84" rel="tooltip" title="Updated 14 days ago">New senior moderators!</a>
+<a data-placement="bottom" href="/forums/topics/561fe54767d52255590016f1" rel="tooltip" title="Updated 1 month ago">Official New Developer Announcement</a>
 </li>
 <li>
-<a data-placement="bottom" href="/forums/topics/5593e316c296354fcc003f68" rel="tooltip" title="Updated 1 month ago">New Map Developers</a>
+<a data-placement="bottom" href="/forums/topics/55f8e60b5f35b924c2000016" rel="tooltip" title="Updated 2 months ago">New shop page launches with a 20% off sale</a>
 </li>
 </ul>
 </div>
@@ -156,7 +156,7 @@ Shop
 
 <div class="row marketing">
 <div class="span4">
-<img src="https://static.oc.tc/assets/index/variety-8d835b189b1904c6e7eacdb60e417fbb.png">
+<img src="https://static.oc.tc/assets/index/variety-4cdd957a937ce0e0189e711925c70ba9dfa6e45fd6de878587d396e3d3ff73d9.png">
 <h2>Variety</h2>
 <p>Overcast Network provides many different maps and play styles that appeal to a wide variety of players. Unlike other servers, we specialize in offering a unique and exclusive experience to everyone.</p>
 <p>
@@ -164,7 +164,7 @@ Shop
 </p>
 </div>
 <div class="span4">
-<img src="https://static.oc.tc/assets/index/competition-00f56fd93eaae46bb81a3d8f0cd92e22.png">
+<img src="https://static.oc.tc/assets/index/competition-f89706b2e21b5ca10b3a33f7c53d9d6f276c29a4327cc1983a6b85902514a6dd.png">
 <h2>Competition</h2>
 <p>Our servers appeal to a wide range of audiences with varying skills and play styles. With such a large and diverse player base, you&apos;ll never be bored fighting the same people over and over again!</p>
 <p>
@@ -172,7 +172,7 @@ Shop
 </p>
 </div>
 <div class="span4">
-<img src="https://static.oc.tc/assets/index/reliability-1e38f657cf34bc6252c20fe0ec9f2abf.png">
+<img src="https://static.oc.tc/assets/index/reliability-a0305bb992611223b40e9aaff3ed38f9fc50a204f64df662b4ef06e08c3a76e0.png">
 <h2>Reliability</h2>
 <p>Overcast Network was designed with scalability and uptime in mind. Development continues at a rapid pace, providing you and your friends with the best gameplay possible.</p>
 <p>
@@ -189,29 +189,29 @@ Contact Overcast Network
 <small class="subject"></small>
 </h3>
 </div>
-<form accept-charset="UTF-8" action="/inquire" class="simple_form new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"><input name="authenticity_token" type="hidden" value="rl97+bJJa6mqgGpikpScBAVa6sUSye6S7qfMpssn/Cw="></div><div class="modal-body">
+<form novalidate="novalidate" class="simple_form new_inquiry" id="new_inquiry" action="/inquire" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;"><input type="hidden" name="authenticity_token" value="7//aAs2ycmFMSq1pn92/GSoDK3qkRJNi5spSzU5yKtrbh2mJYZPoCZRA3gJVz71WSnMHoxei3u6RiPiQpBRgcg=="><div class="modal-body">
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_username">Username</label>
 <div class="controls">
-<input id="inquiry_username" name="inquiry[username]" required="required" size="30" style="width: 250px" type="text">
+<input required="required" style="width: 250px" type="text" name="inquiry[username]" id="inquiry_username">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="email optional control-label" for="inquiry_email">Email</label>
 <div class="controls">
-<input id="inquiry_email" name="inquiry[email]" required="required" size="30" type="email">
+<input required="required" type="email" name="inquiry[email]" id="inquiry_email">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="string optional control-label" for="inquiry_subject">Subject</label>
 <div class="controls">
-<input id="inquiry_subject" name="inquiry[subject]" required="required" size="30" type="text">
+<input required="required" type="text" name="inquiry[subject]" id="inquiry_subject">
 </div>
 </div>
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_message">Message</label>
 <div class="controls">
-<textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="10" style="width: 250px">
+<textarea rows="10" style="width: 250px" name="inquiry[message]" id="inquiry_message">
 </textarea>
 </div>
 </div>
@@ -228,64 +228,109 @@ Contact Overcast Network
 </form>
 </div>
 <footer>
-<ul class="nav nav-pills">
-<li class="pull-left">
-<a>&#xA9; 2015 Overcast Network</a>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Contact
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li class="nav-header">How can we help?</li>
-<li class="divider"></li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">General Inquiry</a>
+<div class="row">
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Policies
 </li>
 <li>
-<a href="/appeal">Ban Appeal</a>
-</li>
-<li>
-<a href="https://github.com/OvercastNetwork/Issues" target="_blank">Technical Issue</a>
-</li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">Purchase Question</a>
-</li>
-</ul>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Rules
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li>
-<a href="/rules">Server Rules</a>
+<a href="/rules">Player Rules</a>
 </li>
 <li>
 <a href="/terms">Terms of Service</a>
 </li>
+<li>
+<a href="/privacy">Privacy Policy</a>
+</li>
+<li>
+<a href="/refund">Refund Policy</a>
+</li>
 </ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Moderation
 </li>
-<li class="pull-right">
-<a href="/punishments">Punishments</a>
+<li>
+<a href="/report">Report a Player</a>
 </li>
-<li class="pull-right">
-<a href="/report">Report</a>
+<li>
+<a href="/appeal">Appeal a Punishment</a>
 </li>
-<li class="pull-right">
-<a href="/appeal">Appeal</a>
+<li>
+<a href="/punishments">Recent Punishments</a>
 </li>
-<li class="pull-right">
-<a href="/staff">Staff</a>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Organization
 </li>
-<li class="pull-right">
-<a href="/revisions">
-Revisions
+<li>
+<a href="/staff">Staff Listing</a>
+</li>
+<li>
+<a href="/revisions">Development Logs</a>
+</li>
+<li>
+<a href="https://github.com/OvercastNetwork/Issues">Report a Bug</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Contact Us
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">General Inquiries</a>
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">Shop Purchases</a>
+</li>
+<li>
+<a href="/appeal">Ban Appeals</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked follow-us">
+<li class="heading">
+Follow Us
+</li>
+<li>
+<a href="https://twitter.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/twitter_icon-ce65c4f4c6d6212c05301d0f3c1a38e8a0b6b0baa8c98853b0ddc310372b6e58.png">
+Twitter
+</a>
+<a href="https://www.facebook.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/facebook_icon-34f4e0ba3a52886710c0360d3f8f35352b6c0a73c7181f690c135b1d24eaa8f0.png">
+Facebook
+</a>
+<a href="https://www.youtube.com/c/OvercastNetwork">
+<img src="https://static.oc.tc/assets/youtube_icon-a724516a1d426e48bae525ea6e04abc3e1cf8234989b3f300ed294a61a6c893d.png">
+YouTube
+</a>
+<a href="http://www.twitch.tv/ocnlive">
+<img src="https://static.oc.tc/assets/twitch_icon-6604f0ced4759bd1c8bb6a01de875a66024f422c14789a752024980d57ba7398.png">
+Twitch
 </a>
 </li>
 </ul>
+</div>
+<div class="span2" style="text-align: center;">
+Servers provided by
+<a href="/host">
+<img class="pull-right" src="https://static.oc.tc/assets/beastnode-844f199a7f8d0aa2903d26a73ce554bbea1d6030baf3f28bface484c944b5d50.png">
+</a>
+<div class="copyright pull-right">
+&#xA9; 2015 Overcast Network
+</div>
+</div>
+</div>
 </footer>
 </div>
 </body>

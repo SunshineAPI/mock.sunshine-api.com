@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="authenticity_token" name="csrf-param">
-<meta content="mlPLVBUj2s1R8fHnb1BkuRuaR4Dv3SAs/OK3Ct+Fo8c=" name="csrf-token">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Vstr7gC8rSkYduQcgFa3ZzIciO2+dNluUwaYiYjKm3MXd7GvKm96npMAwLo2xFTyawlB3OBXal4L5TDM3G1RQw==">
 <meta charset="utf-8">
 <title>
 Overcast Network - SunshineD
@@ -24,7 +24,7 @@ Overcast Network - SunshineD
 <div class="navbar-inner">
 <div class="container">
 <a class="brand" href="/" style="width: 185px;">
-<img src="https://static.oc.tc/assets/logo-eb8d528ad6768886b6f2faabdeb24d15.png">
+<img src="https://static.oc.tc/assets/logo-37044de9c6adad7b81043108523146d146d24bb18e4d40b4b5ad9f2fa7727024.png">
 Overcast Network
 </a>
 <div class="nav-collapse">
@@ -104,10 +104,10 @@ Shop
 </a>
 <ul class="dropdown-menu">
 <li>
-<a href="/login">Login</a>
+<a href="/users/sign_in">Login</a>
 </li>
 <li>
-<a href="/register">Register</a>
+<a href="/users/sign_up">Register</a>
 </li>
 </ul>
 </li>
@@ -187,13 +187,13 @@ Members
 <tr>
 <td>
 <a href="/Jake_0"><img class="avatar" src="https://avatar.oc.tc/Jake_0/20@2x.png" alt="Jake_0" title="Jake_0" width="20" height="20" style="width: 20px; height: 20px; margin-right: 4px;"></a>
-<a href="/Jake_0" style="color: #08c; ">Jake_0</a>
+<a style="color: #08c; " href="/Jake_0">Jake_0</a>
 </td>
 <td>
 Leader
 </td>
 <td data-container="body" data-placement="left" rel="tooltip" title="July 25th, 2015 -  8:40 PM">
-29 days ago
+4 months ago
 </td>
 </tr>
 </tbody>
@@ -210,29 +210,29 @@ Contact Overcast Network
 <small class="subject"></small>
 </h3>
 </div>
-<form accept-charset="UTF-8" action="/inquire" class="simple_form new_inquiry" id="new_inquiry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;"><input name="authenticity_token" type="hidden" value="mlPLVBUj2s1R8fHnb1BkuRuaR4Dv3SAs/OK3Ct+Fo8c="></div><div class="modal-body">
+<form novalidate="novalidate" class="simple_form new_inquiry" id="new_inquiry" action="/inquire" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;"><input type="hidden" name="authenticity_token" value="Rcea4P0bnrjjGzqFwnMh0TA/HEdfbBgjrZJRGMmXyoEEe0Ch18hJD2htHiN04cJEaSrVdgFPqxP1cfldnTAAsQ=="><div class="modal-body">
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_username">Username</label>
 <div class="controls">
-<input id="inquiry_username" name="inquiry[username]" required="required" size="30" style="width: 250px" type="text">
+<input required="required" style="width: 250px" type="text" name="inquiry[username]" id="inquiry_username">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="email optional control-label" for="inquiry_email">Email</label>
 <div class="controls">
-<input id="inquiry_email" name="inquiry[email]" required="required" size="30" type="email">
+<input required="required" type="email" name="inquiry[email]" id="inquiry_email">
 </div>
 </div>
 <div class="control-group pull-right">
 <label class="string optional control-label" for="inquiry_subject">Subject</label>
 <div class="controls">
-<input id="inquiry_subject" name="inquiry[subject]" required="required" size="30" type="text">
+<input required="required" type="text" name="inquiry[subject]" id="inquiry_subject">
 </div>
 </div>
 <div class="control-group pull-left">
 <label class="string optional control-label" for="inquiry_message">Message</label>
 <div class="controls">
-<textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="10" style="width: 250px">
+<textarea rows="10" style="width: 250px" name="inquiry[message]" id="inquiry_message">
 </textarea>
 </div>
 </div>
@@ -249,64 +249,109 @@ Contact Overcast Network
 </form>
 </div>
 <footer>
-<ul class="nav nav-pills">
-<li class="pull-left">
-<a>&#xA9; 2015 Overcast Network</a>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Contact
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li class="nav-header">How can we help?</li>
-<li class="divider"></li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">General Inquiry</a>
+<div class="row">
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Policies
 </li>
 <li>
-<a href="/appeal">Ban Appeal</a>
-</li>
-<li>
-<a href="https://github.com/OvercastNetwork/Issues" target="_blank">Technical Issue</a>
-</li>
-<li>
-<a class="inquiry" data-toggle="modal" href="#contact">Purchase Question</a>
-</li>
-</ul>
-</li>
-<li class="dropup pull-right" style="margin-top: -1px;">
-<a class="dropup-toggle" data-toggle="dropdown" href="#" style="outline: none">
-Rules
-<i class="fa fa-chevron-up"></i>
-</a>
-<ul class="dropdown-menu">
-<li>
-<a href="/rules">Server Rules</a>
+<a href="/rules">Player Rules</a>
 </li>
 <li>
 <a href="/terms">Terms of Service</a>
 </li>
+<li>
+<a href="/privacy">Privacy Policy</a>
+</li>
+<li>
+<a href="/refund">Refund Policy</a>
+</li>
 </ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Moderation
 </li>
-<li class="pull-right">
-<a href="/punishments">Punishments</a>
+<li>
+<a href="/report">Report a Player</a>
 </li>
-<li class="pull-right">
-<a href="/report">Report</a>
+<li>
+<a href="/appeal">Appeal a Punishment</a>
 </li>
-<li class="pull-right">
-<a href="/appeal">Appeal</a>
+<li>
+<a href="/punishments">Recent Punishments</a>
 </li>
-<li class="pull-right">
-<a href="/staff">Staff</a>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Organization
 </li>
-<li class="pull-right">
-<a href="/revisions">
-Revisions
+<li>
+<a href="/staff">Staff Listing</a>
+</li>
+<li>
+<a href="/revisions">Development Logs</a>
+</li>
+<li>
+<a href="https://github.com/OvercastNetwork/Issues">Report a Bug</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked">
+<li class="heading">
+Contact Us
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">General Inquiries</a>
+</li>
+<li>
+<a class="inquiry" data-toggle="modal" href="#contact">Shop Purchases</a>
+</li>
+<li>
+<a href="/appeal">Ban Appeals</a>
+</li>
+</ul>
+</div>
+<div class="span2">
+<ul class="nav nav-pills nav-stacked follow-us">
+<li class="heading">
+Follow Us
+</li>
+<li>
+<a href="https://twitter.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/twitter_icon-ce65c4f4c6d6212c05301d0f3c1a38e8a0b6b0baa8c98853b0ddc310372b6e58.png">
+Twitter
+</a>
+<a href="https://www.facebook.com/OvercastNetwork">
+<img src="https://static.oc.tc/assets/facebook_icon-34f4e0ba3a52886710c0360d3f8f35352b6c0a73c7181f690c135b1d24eaa8f0.png">
+Facebook
+</a>
+<a href="https://www.youtube.com/c/OvercastNetwork">
+<img src="https://static.oc.tc/assets/youtube_icon-a724516a1d426e48bae525ea6e04abc3e1cf8234989b3f300ed294a61a6c893d.png">
+YouTube
+</a>
+<a href="http://www.twitch.tv/ocnlive">
+<img src="https://static.oc.tc/assets/twitch_icon-6604f0ced4759bd1c8bb6a01de875a66024f422c14789a752024980d57ba7398.png">
+Twitch
 </a>
 </li>
 </ul>
+</div>
+<div class="span2" style="text-align: center;">
+Servers provided by
+<a href="/host">
+<img class="pull-right" src="https://static.oc.tc/assets/beastnode-844f199a7f8d0aa2903d26a73ce554bbea1d6030baf3f28bface484c944b5d50.png">
+</a>
+<div class="copyright pull-right">
+&#xA9; 2015 Overcast Network
+</div>
+</div>
+</div>
 </footer>
 </div>
 </body>
